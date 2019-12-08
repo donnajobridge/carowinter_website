@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row justify='start'>
-      <v-col cols=12 sm=6 v-for='(card, index) in allArticles' :key='index'>
+      <v-col cols=12 sm=6 v-for='(card, index) in sortedArticlesByDate' :key='index'>
         <v-card flat color='grey lighten-5' height='auto'>
           <v-row justify='center'>
             <v-col cols=6>
@@ -20,7 +20,7 @@
                   {{card.publication}}
                 </v-row>
                 <v-row>
-                  <a class='teal--text font-weight-bold':href='getPdf(card)' target='_blank'>[ PDF ]</a>
+                  <a v-if='card.pdf' class='teal--text font-weight-bold':href='getPdf(card)' target='_blank'>[ PDF ]</a>
                 </v-row>
               </v-card-text>
             </v-col>
@@ -44,6 +44,10 @@ export default {
     allArticles,
   }),
   computed: {
+    sortedArticlesByDate(){
+      return this.allArticles
+      .sort((a,b)=>(a.date2 > b.date2)? -1 : 1)
+    },
     getHeight(){
       let size = this.$vuetify.breakpoint.name;
       console.log('size', size)
@@ -80,10 +84,9 @@ export default {
       }
     },
     getPdf: function(object){
-      if (object.pdf){
-        let pdfs = require.context('../../public/assets/pdf/', false, /\.pdf$/)
-        return pdfs('./' + object.pdf)
-      }
+      let pdfs = require.context('../../public/assets/pdf/', false, /\.pdf$/)
+      return pdfs('./' + object.pdf)
+
     },
 
 

@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+.v-application a {
+  text-decoration: none !important;
+}
 .body {
   font-family: 'Hiragino Mincho ProN W6', Times New Roman, Times, serif !important;
 }

@@ -29,7 +29,7 @@
 
     </v-container>
 
-    <v-toolbar-title class='pr-8 pr-sm-0'> <router-link to="/"> <img :height="getHeight" :src="getSvgImage('carowinter')"/> </router-link>
+    <v-toolbar-title class='pr-10 pr-sm-0'> <router-link to="/"> <img :height="getHeight" :src="getSvgImage('carowinter')"/> </router-link>
     </v-toolbar-title>
 
     <v-spacer></v-spacer>

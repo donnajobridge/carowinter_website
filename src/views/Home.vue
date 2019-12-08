@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row justify='center'>
-      <v-col cols=6 sm=4 md=3 v-for='(card, index) in topArticles' :key='index'>
+      <v-col cols=6 sm=4 md=3 v-for='(card, index) in frontPage' :key='index'>
         <v-card flat color='grey lighten-3' height='auto' :href="getArticleLink(card)" target='_blank'>
           <v-img max-height='400px' contain :src="getImage(card.image)">
             </v-img>
@@ -13,14 +13,21 @@
 
 
 <script>
-import topArticles from '../articles/top_articles.js'
+import allArticles from '../articles/all_articles.js'
 export default {
   name: 'home',
   components: {
   },
   data: () => ({
-    topArticles,
+    allArticles,
     }),
+  computed: {
+    frontPage(){
+      return this.allArticles
+      .filter(obj => obj.frontPageSpot>0)
+      .sort((a,b)=>(a.frontPageSpot > b.frontPageSpot)? 1 : -1)
+    }
+  },
   methods: {
     getImage: function(name){
       let ext = name.substr(name.length-3);

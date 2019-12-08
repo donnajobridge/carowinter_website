@@ -19,8 +19,8 @@
             class="mx-auto"
           >
 
-            <v-card-text :class="{'title': $vuetify.breakpoint.smAndDown, 'headline':$vuetify.breakpoint.mdAndUp}">
-              Caro is a senior writer at Bloomberg. She was awarded the XX fellowship from MIT in 2017. She currently lives in Berlin with her husband Alex and son Johannes..
+            <v-card-text class='black--text'>
+              Caro is a senior writer at Bloomberg. She was awarded the XX fellowship from MIT in 2017. She currently lives in Berlin with her husband Alex and son Johannes.
             </v-card-text>
 
 

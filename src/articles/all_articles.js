@@ -22,7 +22,7 @@ let allArticles = [
   {
     "date": "March 2017",
     "date2": "2017-03",
-    "frontPageSpot": 0,
+    "frontPageSpot": 16,
     "image": "2017-03_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/features/2017-03-22/how-dilbert-s-scott-adams-got-hypnotized-by-trump",
     "pdf": "2017-03_bloomberg.pdf",
@@ -414,7 +414,7 @@ let allArticles = [
     "date2": "2011-09",
     "frontPageSpot": 15,
     "image": "2011-09_bloomberg.jpg",
-    "link": "pdfs/2011-09_bloomberg.pdf",
+    "link": "https://www.bloomberg.com/news/articles/2011-09-15/poker-expats-in-paradise",
     "pdf": "2011-09_bloomberg.pdf",
     "publication": "Bloomberg Businessweek",
     "title": "On the Run With the Queen of Hearts"
