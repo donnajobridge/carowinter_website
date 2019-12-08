@@ -20,7 +20,11 @@ export default {
 
 <style>
 .body {
-  font-family: 'Hiragino Mincho ProN W6', Times New Roman, Times, serif;
+  font-family: 'Hiragino Mincho ProN W6', Times New Roman, Times, serif !important;
+}
+
+.v-application {
+  font-family: 'Hiragino Mincho ProN W6', Times New Roman, Times, serif !important;
 }
 .no-text-transform {
   text-transform: none !important;

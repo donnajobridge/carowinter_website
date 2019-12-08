@@ -4,9 +4,10 @@
     <v-content>
       <v-container fluid class='overflow-x-hidden'>
         <router-view></router-view>
-      
+
       </v-container>
     </v-content>
+    <footer_caro></footer_caro>
   </div>
 </template>
 

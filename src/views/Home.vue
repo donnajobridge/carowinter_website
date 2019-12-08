@@ -11,9 +11,8 @@
   </v-container>
 </template>
 
+
 <script>
-
-
 import topArticles from '../articles/top_articles.js'
 export default {
   name: 'home',
@@ -22,38 +21,37 @@ export default {
   data: () => ({
     topArticles,
     }),
-
-    methods: {
-      getImage: function(name){
-        let ext = name.substr(name.length-3);
-        let images;
-        switch(ext){
-          case 'svg':
-            images = require.context('../../public/assets/', false, /\.svg$/)
-            return images('./' + name)
-            break;
-          case 'jpg':
-            images = require.context('../../public/assets/', false, /\.jpg$/)
-            return images('./' + name)
-            break;
-          case 'png':
-            images = require.context('../../public/assets/', false, /\.png$/)
-            return images('./' + name)
-            break;
-          case 'pdf':
-            images = require.context('../../public/assets/pdf/', false, /\.pdf$/)
-            return images('./' + name)
-        }
-      },
-      getArticleLink: function(object){
-        if (object.pdf){
-          let pdfs = require.context('../../public/assets/pdf/', false, /\.pdf$/)
-          return pdfs('./' + object.pdf)
-        }
-        else {
-          return object.link
-        }
-      },
+  methods: {
+    getImage: function(name){
+      let ext = name.substr(name.length-3);
+      let images;
+      switch(ext){
+        case 'svg':
+          images = require.context('../../public/assets/', false, /\.svg$/)
+          return images('./' + name)
+          break;
+        case 'jpg':
+          images = require.context('../../public/assets/', false, /\.jpg$/)
+          return images('./' + name)
+          break;
+        case 'png':
+          images = require.context('../../public/assets/', false, /\.png$/)
+          return images('./' + name)
+          break;
+        case 'pdf':
+          images = require.context('../../public/assets/pdf/', false, /\.pdf$/)
+          return images('./' + name)
+      }
+    },
+    getArticleLink: function(object){
+      if (object.pdf){
+        let pdfs = require.context('../../public/assets/pdf/', false, /\.pdf$/)
+        return pdfs('./' + object.pdf)
+      }
+      else {
+        return object.link
+      }
+    },
 
 
   }

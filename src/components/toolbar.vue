@@ -1,12 +1,10 @@
 <template>
   <v-app-bar app flat height='90px' color='grey lighten-5'>
     <v-container class='hidden-sm-and-up'>
-      <v-app-bar-nav-icon x-large @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon x-large color='black' class='ml-n4' @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-navigation-drawer
           v-model="drawer"
           app
-          temporary
-          enable-resize-watcher
           clipped
           height='auto'
           hide-overlay
@@ -15,12 +13,12 @@
             <v-list>
               <v-list-item v-for='(button, index) in buttons' :key="index" @click="goToPage(button.link)">
 
-                <v-list-item-icon>
-                  <v-icon>{{button.icon}}</v-icon>
-                </v-list-item-icon>
+                <!-- <v-list-item-icon>
+                  <v-icon color='teal'>{{button.icon}}</v-icon>
+                </v-list-item-icon> -->
 
                 <v-list-item-content>
-                  <v-list-item-title v-text="button.name"></v-list-item-title>
+                  <v-list-item-title class='' v-text="button.name"></v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
 
@@ -31,15 +29,15 @@
 
     </v-container>
 
-    <v-toolbar-title class='pr-8 pr-sm-0'> <router-link to="/"> <img height='70px' :src="getSvgImage('carowinter')"/> </router-link>
+    <v-toolbar-title class='pr-8 pr-sm-0'> <router-link to="/"> <img :height="getHeight" :src="getSvgImage('carowinter')"/> </router-link>
     </v-toolbar-title>
 
     <v-spacer></v-spacer>
 
-    <v-toolbar-items class='hidden-xs-only navy--text'>
-      <v-btn class='teal--text no-text-transform' v-show=showHome text to='/'>home</v-btn>
-      <v-btn class='teal--text no-text-transform' text to='/articles'>articles</v-btn>
-      <v-btn class='teal--text no-text-transform' text to='/about'>about</v-btn>
+    <v-toolbar-items class='hidden-xs-only'>
+      <v-btn class='teal--text font-weight-bold' v-show=showHome text to='/'>home</v-btn>
+      <v-btn class='teal--text font-weight-bold' text to='/articles'>articles</v-btn>
+      <v-btn class='teal--text font-weight-bold' text to='/about'>about</v-btn>
 
 
     </v-toolbar-items>
@@ -56,17 +54,17 @@ export default {
     val: false,
     buttons:[
       {
-        name: 'home',
+        name: 'HOME',
         link: '/',
         icon: 'mdi-home'
       },
       {
-        name: 'articles',
+        name: 'ARTICLES',
         link: '/articles',
         icon: 'mdi-book-open-variant'
       },
       {
-        name: 'about',
+        name: 'ABOUT',
         link: '/about',
         icon: 'mdi-information-outline'
       },
@@ -78,6 +76,14 @@ export default {
     showHome:{
       default: false,
       type: Boolean
+    },
+  },
+  computed: {
+    getHeight(){
+      if(this.$vuetify.breakpoint.name =='xs'){
+        return '40px'
+      }
+      else {return '70px'}
     },
   },
   methods: {
