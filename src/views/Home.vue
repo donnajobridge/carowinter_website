@@ -67,8 +67,6 @@ export default {
         return object.link
       }
     },
-
-
   }
 };
 
