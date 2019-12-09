@@ -4,12 +4,12 @@
       <v-col cols=12 sm=6 v-for='(card, index) in sortedArticlesByDate' :key='index'>
         <v-card flat color='grey lighten-5' height='auto'>
           <v-row justify='center'>
-            <v-col cols=6>
+            <v-col cols=6 align-self='center'>
               <v-img :height="getHeight" contain :src="getImage(card.image)"></v-img>
             </v-col>
 
             <v-col cols=6 align-self='center'>
-              <v-card-text>
+              <v-card-text class='py-0 pl-1 pr-1'>
                 <v-row class='pb-sm-1 pb-md-2'>
                   {{card.date}}
                 </v-row>
