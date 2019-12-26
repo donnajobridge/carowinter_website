@@ -2,7 +2,7 @@ let allArticles = [
   {
     "date": "September 2017",
     "date2": "2017-09",
-    "frontPageSpot": 0,
+    "frontPageSpot": 1,
     "image": "2017-09_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/features/2017-09-21/nestl-makes-billions-bottling-water-it-pays-nearly-nothing-for",
     "pdf": "2017-09_bloomberg.pdf",
@@ -12,7 +12,7 @@ let allArticles = [
   {
     "date": "April 2017",
     "date2": "2017-04",
-    "frontPageSpot": 0,
+    "frontPageSpot": 2,
     "image": "2017-04_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/articles/2017-04-26/ifly-and-the-rise-of-indoor-sky-diving",
     "pdf": "2017-04_bloomberg.pdf",
@@ -22,7 +22,7 @@ let allArticles = [
   {
     "date": "March 2017",
     "date2": "2017-03",
-    "frontPageSpot": 16,
+    "frontPageSpot": 3,
     "image": "2017-03_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/features/2017-03-22/how-dilbert-s-scott-adams-got-hypnotized-by-trump",
     "pdf": "2017-03_bloomberg.pdf",
@@ -32,7 +32,7 @@ let allArticles = [
   {
     "date": "July 2016",
     "date2": "2016-07",
-    "frontPageSpot": 0,
+    "frontPageSpot": 4,
     "image": "2016-07_bloomberg.png",
     "link": "http://www.bloomberg.com/features/2016-newvistas-mormon-utopia/",
     "pdf": "2016-07_bloomberg.pdf",
@@ -42,7 +42,7 @@ let allArticles = [
   {
     "date": "December 2015",
     "date2": "2015-12",
-    "frontPageSpot": 4,
+    "frontPageSpot": 5,
     "image": "2015-12_bloomberg.jpg",
     "link": "http://www.bloomberg.com/features/2015-whale-shark-diving/",
     "pdf": "2015-12_bloomberg.pdf",
@@ -52,7 +52,7 @@ let allArticles = [
   {
     "date": "August 2015",
     "date2": "2015-08",
-    "frontPageSpot": 0,
+    "frontPageSpot": 6,
     "image": "2015-08_bloomberg.jpg",
     "link": "http://www.bloomberg.com/graphics/2015-ketamine-depression-treatment/",
     "pdf": "2015-08_bloomberg.pdf",
@@ -62,7 +62,7 @@ let allArticles = [
   {
     "date": "July 2015",
     "date2": "2015-07",
-    "frontPageSpot": 0,
+    "frontPageSpot": 7,
     "image": "2015-07_bloomberg.jpg",
     "link": "http://www.bloomberg.com/news/articles/2015-07-22/cosmetics-startup-aobiome-sells-bacteria-for-healthier-skin",
     "pdf": "2015-07_bloomberg.pdf",
@@ -72,7 +72,7 @@ let allArticles = [
   {
     "date": "May 2015",
     "date2": "2015-05",
-    "frontPageSpot": 0,
+    "frontPageSpot": 8,
     "image": "2015-05_bloomberg.jpg",
     "link": "http://www.bloomberg.com/news/articles/2015-05-07/lighting-designer-lindsey-adelman-manages-department-of-fantasy",
     "pdf": "2015-05_bloomberg.pdf",
@@ -82,7 +82,7 @@ let allArticles = [
   {
     "date": "April 2015",
     "date2": "2015-04",
-    "frontPageSpot": 0,
+    "frontPageSpot": 9,
     "image": "2015-04_bloomberg.jpg",
     "link": "http://www.bloomberg.com/news/articles/2015-04-09/black-list-podcast-brings-hollywood-s-best-unproduced-scripts-to-life",
     "pdf": "2015-04_bloomberg.pdf",
@@ -92,7 +92,7 @@ let allArticles = [
   {
     "date": "February 2015",
     "date2": "2015-02",
-    "frontPageSpot": 13,
+    "frontPageSpot": 10,
     "image": "2015-02_bloomberg.jpg",
     "link": "http://www.bloomberg.com/news/articles/2015-02-27/marina-abramovic-tries-to-monetize-performance-art",
     "pdf": "2015-02_bloomberg.pdf",
@@ -102,7 +102,7 @@ let allArticles = [
   {
     "date": "February 2015",
     "date2": "2015-02",
-    "frontPageSpot": 0,
+    "frontPageSpot": 11,
     "image": "2015-02_bloomberg_a.png",
     "link": "http://www.bloomberg.com/news/articles/2015-02-05/steve-einzig-can-book-that-nostalgia-act-for-your-wedding",
     "pdf": "2015-02_bloomberg_a.pdf",
@@ -112,7 +112,7 @@ let allArticles = [
   {
     "date": "January 2014",
     "date2": "2014-01",
-    "frontPageSpot": 0,
+    "frontPageSpot": 12,
     "image": "2014-01_bloomberg.png",
     "link": "http://www.bloomberg.com/news/articles/2015-01-30/addiction-treatment-goes-public-aac-s-recovery-center-empire",
     "pdf": "2014-01_bloomberg.pdf",
@@ -132,7 +132,7 @@ let allArticles = [
   {
     "date": "November 2014",
     "date2": "2014-11",
-    "frontPageSpot": 6,
+    "frontPageSpot": 0,
     "image": "2014-11_bloomberg_a.png",
     "link": "http://www.bloomberg.com/bw/articles/2014-11-13/glossier-emily-weisss-makeup-for-cool-girls",
     "pdf": "2014-11_bloomberg_a.pdf",
@@ -162,7 +162,7 @@ let allArticles = [
   {
     "date": "August 2014",
     "date2": "2014-08",
-    "frontPageSpot": 12,
+    "frontPageSpot": 0,
     "image": "2014-08_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2014-08-21/juliet-marines-ghost-boat-will-be-hard-sell-to-u-dot-s-dot-navy",
     "pdf": "2014-08_bloomberg.pdf",
@@ -172,7 +172,7 @@ let allArticles = [
   {
     "date": "May 2014",
     "date2": "2014-05",
-    "frontPageSpot": 3,
+    "frontPageSpot": 0,
     "image": "2014-05_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2014-05-22/allis-markham-hollywood-taxidermys-rising-star",
     "pdf": "2014-05_bloomberg.pdf",
@@ -192,7 +192,7 @@ let allArticles = [
   {
     "date": "March 2014",
     "date2": "2014-03",
-    "frontPageSpot": 9,
+    "frontPageSpot": 0,
     "image": "2014-03_bloomberg.png",
     "link": "http://www.businessweek.com/articles/2014-03-20/andrew-hessels-autodesk-team-seeks-crowdsourced-cancer-cure",
     "pdf": "2014-03_bloomberg.pdf",
@@ -222,7 +222,7 @@ let allArticles = [
   {
     "date": "January 2014",
     "date2": "2014-01",
-    "frontPageSpot": 5,
+    "frontPageSpot": 0,
     "image": "2014-01_bloomberg_b.jpg",
     "link": "http://www.businessweek.com/articles/2014-01-09/the-minds-eye-synesthesia-has-business-benefits",
     "pdf": "2014-01_bloomberg_b.pdf",
@@ -232,7 +232,7 @@ let allArticles = [
   {
     "date": "December 2013",
     "date2": "2013-12",
-    "frontPageSpot": 1,
+    "frontPageSpot": 0,
     "image": "2013-12_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2013-12-12/byron-allens-entertainment-factory-produces-low-budget-tv-shows",
     "pdf": "2013-12_bloomberg.pdf",
@@ -262,7 +262,7 @@ let allArticles = [
   {
     "date": "June 2013",
     "date2": "2013-06",
-    "frontPageSpot": 8,
+    "frontPageSpot": 0,
     "image": "2013-06_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2013-06-06/mansudae-art-studio-north-koreas-colossal-monument-factory",
     "pdf": "2013-06_bloomberg.pdf",
@@ -282,7 +282,7 @@ let allArticles = [
   {
     "date": "January 2013",
     "date2": "2013-01",
-    "frontPageSpot": 2,
+    "frontPageSpot": 0,
     "image": "2013-01_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2013-01-24/jeanne-gang-and-the-greening-of-chicago",
     "pdf": "2013-01_bloomberg.pdf",
@@ -312,7 +312,7 @@ let allArticles = [
   {
     "date": "July 2012",
     "date2": "2012-07",
-    "frontPageSpot": 10,
+    "frontPageSpot": 0,
     "image": "2012-07_bloomberg.png",
     "link": "http://www.businessweek.com/articles/2012-07-10/how-the-mormons-make-money",
     "pdf": "2012-07_bloomberg.pdf",
@@ -322,7 +322,7 @@ let allArticles = [
   {
     "date": "February 2012",
     "date2": "2012-02",
-    "frontPageSpot": 14,
+    "frontPageSpot": 0,
     "image": "2012-02_bloomberg.jpg",
     "link": "http://www.businessweek.com/articles/2012-02-29/the-germany-website-copy-machine",
     "pdf": "2012-02_bloomberg.pdf",
@@ -362,7 +362,7 @@ let allArticles = [
   {
     "date": "August 2008",
     "date2": "2008-08",
-    "frontPageSpot": 7,
+    "frontPageSpot": 0,
     "image": "2008-08_the-new-york-times-magazine.png",
     "link": "http://www.nytimes.com/2008/08/03/magazine/03wwln-guestsafire-t.html",
     "pdf": null,
@@ -382,7 +382,7 @@ let allArticles = [
   {
     "date": "September 2003",
     "date2": "2003-09",
-    "frontPageSpot": 11,
+    "frontPageSpot": 0,
     "image": "2003-09_the-new-york-times.jpg",
     "link": "http://www.nytimes.com/2003/09/26/opinion/saddam-hussein-is-in-my-kitchen.html",
     "pdf": null,
@@ -412,7 +412,7 @@ let allArticles = [
   {
     "date": "September 2011",
     "date2": "2011-09",
-    "frontPageSpot": 15,
+    "frontPageSpot": 0,
     "image": "2011-09_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/articles/2011-09-15/poker-expats-in-paradise",
     "pdf": "2011-09_bloomberg.pdf",

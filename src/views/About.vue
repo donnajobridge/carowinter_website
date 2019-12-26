@@ -1,41 +1,25 @@
 <template>
   <v-container>
-  <!-- donna -->
-      <v-row align='center' justify='space-around'>
-        <v-col cols=11 sm=5 md=4 align-self='center'>
-          <v-card flat color='grey lighten-5'
-            class="mx-auto"
-          >
-            <!-- <v-img max-height='400px' contain
-              :src="getJpgImage('200-Winter-Caroline')"
-            >
-            </v-img> -->
-          </v-card>
-          </v-col>
-          <v-col cols=11 sm=6>
-          <v-card
-            flat
-            color='grey lighten-5'
-            class="mx-auto"
-          >
-
-            <v-card-text class='black--text'>
-              {{bioText}}
-            </v-card-text>
-
-
-          </v-card>
+    <v-row align='center' justify='space-around'>
+      <v-col cols=11 sm=5 md=4 align-self='center'>
+        <v-card flat color='grey lighten-5' class="mx-auto">
+          <v-img max-height='400px' contain
+            :src="getImage('200-Winter-Caroline.jpg')">
+          </v-img>
+        </v-card>
         </v-col>
-
-      </v-row>
-
-
+        <v-col cols=11 sm=6>
+        <v-card flat color='grey lighten-5' class="mx-auto">
+          <v-card-text class='black--text'>
+            {{bioText}}
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-
 
 export default {
   name: "about",
@@ -57,17 +41,29 @@ export default {
         school: 'Wesleyan University'
       },
     ],
-
   }),
   methods: {
-    getSvgImage: function(name){
-      let images = require.context('../../public/assets/', false, /\.svg$/)
-      return images('./' + name + ".svg")
+    getImage: function(name){
+      let ext = name.substr(name.length-3);
+      let images;
+      switch(ext){
+        case 'svg':
+          images = require.context('../../public/assets/', false, /\.svg$/)
+          return images('./' + name)
+          break;
+        case 'jpg':
+          images = require.context('../../public/assets/', false, /\.jpg$/)
+          return images('./' + name)
+          break;
+        case 'png':
+          images = require.context('../../public/assets/', false, /\.png$/)
+          return images('./' + name)
+          break;
+        case 'pdf':
+          images = require.context('../../public/assets/pdf/', false, /\.pdf$/)
+          return images('./' + name)
+      }
     },
-    getJpgImage: function(name){
-      let images = require.context('../../public/assets/', false, /\.jpg$/)
-      return images('./' + name + ".jpg")
-    },
-  }
+  },
 };
 </script>
