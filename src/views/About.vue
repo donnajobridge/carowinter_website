@@ -6,10 +6,10 @@
           <v-card flat color='grey lighten-5'
             class="mx-auto"
           >
-            <v-img max-height='400px' contain
+            <!-- <v-img max-height='400px' contain
               :src="getJpgImage('200-Winter-Caroline')"
             >
-            </v-img>
+            </v-img> -->
           </v-card>
           </v-col>
           <v-col cols=11 sm=6>
@@ -20,7 +20,7 @@
           >
 
             <v-card-text class='black--text'>
-              Caro is a senior writer at Bloomberg. She was awarded the XX fellowship from MIT in 2017. She currently lives in Berlin with her husband Alex and son Johannes.
+              {{bioText}}
             </v-card-text>
 
 
@@ -42,6 +42,7 @@ export default {
   components: {
   },
   data: () => ({
+    bioText: "Caroline Elke Winter was born in West Germany and grew up mostly in western Massachusetts. Before joining Bloomberg Businessweek as a staff writer in 2010, she was a Fulbright fellow and freelanced articles for The New York Times Magazine, Spiegel International, and other publications. In 2017, she was awarded a Knight Science Journalism fellowship at MIT, where she spent much of her time learning about the human microbiome. She now lives in Berlin, Germany, with her husband and son, and bikes everywhere. This site features a selection of her work, including many profiles of scientists, tinkerers, and business tycoons.",
     edu: [
       {
         year: '2008',
