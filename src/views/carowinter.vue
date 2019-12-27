@@ -1,9 +1,9 @@
 <template>
   <div>
-    <toolbar :showHome=showHome ></toolbar>
+    <toolbar :showHome=showHome @click='articleTab=$event'></toolbar>
     <v-content>
       <v-container fluid class='overflow-x-hidden'>
-        <router-view></router-view>
+        <router-view :articleTab='articleTab'></router-view>
       </v-container>
     </v-content>
     <footer_caro></footer_caro>
@@ -20,6 +20,7 @@ export default {
   components: {toolbar, footer_caro
   },
   data: () => ({
+    articleTab: 'all',
   }),
   computed: {
     showHome(){

@@ -29,8 +29,9 @@ export default {
     },
     randomArticles(){
       let n=12;
+      let front = this.allArticles.filter(article => article.frontPage)
       // Shuffle array
-      const shuffled = this.allArticles.sort(() => 0.5 - Math.random());
+      const shuffled = front.sort(() => 0.5 - Math.random());
       // Get sub-array of first n elements after shuffled
       let selected = shuffled.slice(0, n);
       return selected;

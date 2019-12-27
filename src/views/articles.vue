@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row justify='start'>
-      <v-col cols=12 sm=6 v-for='(card, index) in sortedArticlesByDate' :key='index'>
+      <v-col cols=12 sm=6 v-for='(card, index) in showArticles' :key='index'>
         <v-card flat color='grey lighten-5' height='auto'>
           <v-row justify='center'>
             <v-col cols=6 align-self='center'>
@@ -35,12 +35,34 @@ import allArticles from '../articles/all_articles.js'
 
 export default {
   name: 'home',
+  articleTab: 'all',
+
   components: {
   },
   data: () => ({
     allArticles,
   }),
+  props: {
+    articleTab: {
+      type: String,
+      default: 'all'
+    },
+  },
   computed: {
+    showArticles(){
+      switch(this.articleTab){
+        case 'bloom':
+        return this.sortedArticlesByDate.filter(article => article.publication =='Bloomberg Businessweek')
+        break;
+        case 'nyt':
+        return this.sortedArticlesByDate.filter(article => article.publication !='Bloomberg Businessweek')
+        break;
+        case 'fav':
+        return this.sortedArticlesByDate.filter(article => article.favorite ==true)
+        break;
+        default: return this.sortedArticlesByDate
+      }
+    },
     sortedArticlesByDate(){
       return this.allArticles
       .sort((a,b)=>(a.date2 > b.date2)? -1 : 1)

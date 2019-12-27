@@ -6,7 +6,7 @@ let allArticles = [
     "favorite": true,
     "image": "2019-06_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/features/2019-06-06/towing-an-iceberg-one-captain-s-plan-to-bring-drinking-water-to-4-million-people",
-    "pdf": "2019-06_bloomberg.jpg",
+    "pdf": "2019-06_bloomberg.pdf",
     "publication": "Bloomberg Businessweek",
     "title": "How to Tow an Iceberg from Antarctica"
   },
@@ -17,7 +17,7 @@ let allArticles = [
     "favorite": true,
     "image": "2019-04_bloomberg.jpg",
     "link": "https://www.bloomberg.com/news/features/2019-04-22/even-clorox-and-unilever-want-the-booming-bacteria-business-to-thrive",
-    "pdf": "2019-04_bloomberg.jpg",
+    "pdf": "2019-04_bloomberg.pdf",
     "publication": "Bloomberg Businessweek",
     "title": "Bring On the Bacteria"
   },
@@ -299,7 +299,7 @@ let allArticles = [
   {
     "date": "August 2013",
     "date2": "2013-08",
-    "frontPage": flase,
+    "frontPage": false,
     "favorite": false,
     "image": "2013-08_bloomberg.png",
     "link": "http://www.businessweek.com/articles/2013-08-08/dealer-david-zwirner-on-the-art-market-and-collectors-like-steve-cohen",
