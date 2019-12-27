@@ -9,6 +9,7 @@
           v-model="drawer"
           app
           clipped
+          right
           height='auto'
           hide-overlay
         >
@@ -33,14 +34,34 @@
     </v-container>
 
 
-
-    <!-- <v-spacer></v-spacer> -->
-
-    <v-toolbar-items class='pl-4 hidden-xs-only'>
+    <v-toolbar-items class='pl-8 hidden-xs-only'>
       <v-btn class='teal--text font-weight-bold' v-show=showHome text to='/'>home</v-btn>
-      <v-btn class='teal--text font-weight-bold' text to='/articles'>articles</v-btn>
-      <v-btn class='teal--text font-weight-bold' text to='/about'>about</v-btn>
+      <v-menu
+      v-model="val"
+      close-on-click
+      close-on-content-click
+      z-index=10
+      open-on-hover
+      offset-y
+      width='auto'
+      height='auto'
+      >
 
+        <template v-slot:activator="{ on }">
+            <v-btn class='teal--text font-weight-bold' @click="emitArticleTab('all')" text v-on="on" to='/articles' >articles</v-btn>
+        </template>
+
+        <v-card class="mx-auto">
+          <v-list subheader>
+            <v-list-item v-for="articleClass in articleClasses" :key='articleClass.title' @click='emitArticleTab(articleClass.tab)'>
+              <v-list-item-content>
+                <v-list-item-title v-text="articleClass.title"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+        </v-list>
+      </v-card>
+      </v-menu>
+      <v-btn class='teal--text font-weight-bold' text to='/about'>about</v-btn>
 
     </v-toolbar-items>
 
@@ -54,6 +75,7 @@ export default {
   data: () =>({
     drawer: false,
     val: false,
+    articleTab: 'all',
     buttons:[
       {
         name: 'HOME',
@@ -72,6 +94,23 @@ export default {
       },
 
     ],
+    articleClasses: [
+      {
+        title: 'Bloomberg Businessweek',
+        option: 'bloomberg',
+        tab: 'bloom'
+    },
+    {
+      title: 'The New York Times / Misc.',
+      option: 'notBloomberg',
+      tab: 'nyt'
+    },
+    {
+      title: 'Favorites',
+      option: 'favorite',
+      tab: 'fav'
+    },
+    ]
 
   }),
   props: {
@@ -95,6 +134,9 @@ export default {
     },
     goToPage: function(path){
       this.$router.push(path)
+    },
+    emitArticleTab: function(event){
+      this.$emit('click', event)
     }
   },
 }
