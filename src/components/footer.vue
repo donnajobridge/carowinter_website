@@ -1,7 +1,8 @@
 <template>
-  <v-footer color='grey lighten-5'>
+  <v-footer absolute app padless color='grey lighten-5'>
     <v-card
       flat
+
       tile
       width="100%"
       class="grey lighten-5 text-center"

@@ -1,7 +1,10 @@
 <template>
   <v-app-bar app flat height='90px' color='grey lighten-5'>
+    <v-toolbar-title class='pr-10 pr-sm-0'> <router-link to="/"> <img :height="getHeight" :src="getSvgImage('carowinter')"/> </router-link>
+    </v-toolbar-title>
     <v-container class='hidden-sm-and-up'>
-      <v-app-bar-nav-icon x-large color='black' class='ml-n4' @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-row justify='end'>
+      <v-app-bar-nav-icon x-large color='black'  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-navigation-drawer
           v-model="drawer"
           app
@@ -26,15 +29,14 @@
         </v-card>
 
       </v-navigation-drawer>
-
+    </v-row>
     </v-container>
 
-    <v-toolbar-title class='pr-10 pr-sm-0'> <router-link to="/"> <img :height="getHeight" :src="getSvgImage('carowinter')"/> </router-link>
-    </v-toolbar-title>
 
-    <v-spacer></v-spacer>
 
-    <v-toolbar-items class='hidden-xs-only'>
+    <!-- <v-spacer></v-spacer> -->
+
+    <v-toolbar-items class='pl-4 hidden-xs-only'>
       <v-btn class='teal--text font-weight-bold' v-show=showHome text to='/'>home</v-btn>
       <v-btn class='teal--text font-weight-bold' text to='/articles'>articles</v-btn>
       <v-btn class='teal--text font-weight-bold' text to='/about'>about</v-btn>
