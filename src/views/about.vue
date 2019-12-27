@@ -26,7 +26,7 @@ export default {
   components: {
   },
   data: () => ({
-    bioText: "Caroline Elke Winter was born in West Germany and grew up mostly in western Massachusetts. Before joining Bloomberg Businessweek as a staff writer in 2010, she was a Fulbright fellow and freelanced articles for The New York Times Magazine, Spiegel International, and other publications. In 2017, she was awarded a Knight Science Journalism fellowship at MIT, where she spent much of her time learning about the human microbiome. She now lives in Berlin, Germany, with her husband and son, and bikes everywhere. This site features a selection of her work, including many profiles of scientists, tinkerers, and business tycoons.",
+    bioText: "Caroline Elke Winter was born in Stuttgart, Germany, and grew up mostly in Amherst, Massachusetts. Before joining Bloomberg Businessweek as a staff writer in 2010, she was a Fulbright fellow and freelanced articles for publications including The New York Times Magazine and Spiegel International. In 2017, she was awarded a Knight Science Journalism fellowship at MIT, where she spent much of her time learning about the human microbiome. She now lives in Berlin, Germany, with her husband and son, and bikes everywhere. This site features a selection of her work, including several profiles of scientists, tinkerers, and business tycoons.",
     edu: [
       {
         year: '2008',
