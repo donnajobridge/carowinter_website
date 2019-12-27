@@ -3,7 +3,6 @@
     <toolbar :showHome=showHome @click='articleTab=$event'></toolbar>
     <v-content>
       <v-container fluid class='overflow-x-hidden'>
-        {{articleTab}}
         <router-view :articleTab='articleTab'></router-view>
       </v-container>
     </v-content>

@@ -15,15 +15,16 @@
         >
           <v-card class="mx-auto">
             <v-list>
-              <v-list-item v-for='(button, index) in buttons' :key="index" @click="goToPage(button.link)">
-
-                <!-- <v-list-item-icon>
-                  <v-icon color='teal'>{{button.icon}}</v-icon>
-                </v-list-item-icon> -->
-
+              <v-list-item v-for='mainTab in mainTabs' :key="mainTab.name" @click="goToPage(mainTab.link)">
                 <v-list-item-content>
-                  <v-list-item-title class='' v-text="button.name"></v-list-item-title>
+                  <v-list-item-title class='' v-text="mainTab.name"></v-list-item-title>
                 </v-list-item-content>
+              </v-list-item>
+
+              <v-list-item v-for="articleClass in articleClasses" :key='articleClass.title' @click='emitArticleTab(articleClass.tab)'>
+                <v-subheader>
+                  {{articleClass.title}}
+                </v-subheader>
               </v-list-item>
 
           </v-list>
@@ -76,21 +77,22 @@ export default {
     drawer: false,
     val: false,
     articleTab: 'all',
-    buttons:[
+    mainTabs:[
       {
         name: 'HOME',
         link: '/',
         icon: 'mdi-home'
       },
-      {
-        name: 'ARTICLES',
-        link: '/articles',
-        icon: 'mdi-book-open-variant'
-      },
+
       {
         name: 'ABOUT',
         link: '/about',
         icon: 'mdi-information-outline'
+      },
+      {
+        name: 'ARTICLES',
+        link: '/articles',
+        icon: 'mdi-book-open-variant'
       },
 
     ],
