@@ -103,7 +103,7 @@ let allArticles = [
     "date2": "2015-05",
     "frontPage": true,
     "favorite": false,
-    "image": "2015-05_bloomberg.jpg",
+    "image": "2015-05_bloomberg.png",
     "link": "http://www.bloomberg.com/news/articles/2015-05-07/lighting-designer-lindsey-adelman-manages-department-of-fantasy",
     "pdf": "2015-05_bloomberg.pdf",
     "publication": "Bloomberg Businessweek",

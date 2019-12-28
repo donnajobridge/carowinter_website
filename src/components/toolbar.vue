@@ -103,12 +103,12 @@ export default {
         tab: 'bloom'
     },
     {
-      title: 'The New York Times / Misc.',
+      title: 'The New York Times + More',
       option: 'notBloomberg',
       tab: 'nyt'
     },
     {
-      title: 'Favorites',
+      title: 'Some Favorites',
       option: 'favorite',
       tab: 'fav'
     },
@@ -139,6 +139,7 @@ export default {
     },
     emitArticleTab: function(event){
       this.$emit('click', event)
+      this.$router.push('/articles')
     }
   },
 }

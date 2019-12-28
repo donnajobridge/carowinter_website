@@ -15,5 +15,10 @@ npm run serve
 npm run build
 ```
 
+### deploy online
+```
+aws s3 sync ./dist s3://carowinter.com
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
