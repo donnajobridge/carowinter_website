@@ -36,7 +36,7 @@
 
 
     <v-toolbar-items class='pl-8 hidden-xs-only'>
-      <v-btn class='teal--text font-weight-bold' v-show=showHome text to='/'>home</v-btn>
+      <v-btn class='teal--text font-weight-bold' text to='/'>home</v-btn>
       <v-menu
       v-model="val"
       close-on-click

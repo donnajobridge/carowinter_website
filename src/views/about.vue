@@ -4,7 +4,7 @@
       <v-col cols=11 sm=5 md=4 align-self='center'>
         <v-card flat color='grey lighten-5' class="mx-auto">
           <v-img max-height='400px' contain
-            :src="getImage('200-Winter-Caroline.jpg')">
+            :src="getImage('IMG_0214.jpg')">
           </v-img>
         </v-card>
         </v-col>
