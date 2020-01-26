@@ -36,7 +36,7 @@
 
 
     <v-toolbar-items class='pl-8 hidden-xs-only'>
-      <v-btn class='teal--text font-weight-bold' text to='/'>home</v-btn>
+      <v-btn class='teal--text font-weight-bold' text to='/home'>home</v-btn>
       <v-menu
       v-model="val"
       close-on-click
@@ -49,7 +49,7 @@
       >
 
         <template v-slot:activator="{ on }">
-            <v-btn class='teal--text font-weight-bold' @click="emitArticleTab('all')" text v-on="on" to='/articles' >articles</v-btn>
+            <v-btn class='teal--text font-weight-bold' @click="emitArticleTab('all')" text v-on="on" to='/articles'>articles <v-icon small>mdi-menu-down</v-icon></v-btn>
         </template>
 
         <v-card class="mx-auto">
@@ -80,7 +80,7 @@ export default {
     mainTabs:[
       {
         name: 'HOME',
-        link: '/',
+        link: '/home',
         icon: 'mdi-home'
       },
 

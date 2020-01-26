@@ -13,6 +13,11 @@ const routes = [
     component: carowinter,
     children: [
       {
+        path: '/home',
+        name: 'redirect',
+        redirect: '/'
+      },
+      {
         path: '/',
         name: 'home',
         component: home
