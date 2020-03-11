@@ -14,7 +14,7 @@
           v-for="(icon, index) in icons" :key='index'
           class="mx-4"
           icon
-          :href='icon.href'
+          :href='icon.href' target='_blank'
         >
           <v-icon color='black' size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
@@ -31,7 +31,7 @@ export default {
   data: () =>({
     icons: [
       {icon:'mdi-email', href: 'mailto:  caro@carowinter.com'},
-      {icon:'mdi-linkedin-box', href: 'https://www.linkedin.com/in/caroline-elke-winter-4675216/'}
+      {icon:'mdi-linkedin', href: 'https://www.linkedin.com/in/caroline-elke-winter-4675216/'}
     ],
   })
 }
