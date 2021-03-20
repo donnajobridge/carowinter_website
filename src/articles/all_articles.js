@@ -1,5 +1,38 @@
 let allArticles = [
   {
+    "date": "December 2020",
+    "date2": "2020-12",
+    "frontPage": true,
+    "favorite": true,
+    "image": "2020-12_bloomberg.png",
+    "link": "https://www.bloomberg.com/news/features/2020-12-16/covid-pandemic-microbiomes-could-be-key-to-stopping-spread-of-future-viruses",
+    "pdf": "2020-12_bloomberg.pdf",
+    "publication": "Bloomberg Businessweek",
+    "title": "How To Heal a Building"
+  },
+  {
+    "date": "February 2020",
+    "date2": "2020-02",
+    "frontPage": true,
+    "favorite": false,
+    "image": "2020-02_bloomberg.png",
+    "link": "https://www.bloomberg.com/news/features/2020-02-04/no-city-hates-its-landlords-like-berlin-does",
+    "pdf": "2020-02_bloomberg.pdf",
+    "publication": "Bloomberg Businessweek",
+    "title": "No City Hates Its Landlords Like Berlin Does"
+  },
+  {
+    "date": "September 2019",
+    "date2": "2019-09",
+    "frontPage": false,
+    "favorite": false,
+    "image": "2019-09_bloomberg.png",
+    "link": "https://www.bloomberg.com/news/features/2019-09-19/bayer-s-monsanto-purchase-looks-worse-with-each-roundup-verdict",
+    "pdf": "2019-09_bloomberg.pdf",
+    "publication": "Bloomberg Businessweek",
+    "title": "With Each Roundup Verdict, Bayer's Monsanto Purchase Looks Worse"
+  },
+  {
     "date": "June 2019",
     "date2": "2019-06",
     "frontPage": true,
