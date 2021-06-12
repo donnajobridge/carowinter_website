@@ -1,11 +1,11 @@
 <template>
   <div>
     <toolbar :showHome=showHome @click='articleTab=$event'></toolbar>
-    <v-content>
+    <v-main>
       <v-container fluid class='overflow-x-hidden'>
         <router-view :articleTab='articleTab'></router-view>
       </v-container>
-    </v-content>
+    </v-main>
     <footer_caro></footer_caro>
   </div>
 </template>
